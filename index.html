@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter sign-up form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="signupForm">
+      
+      <!-- Sign-up form start -->     
+        <div class="signupFormDescription">
+          <h2>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p> 
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+        <div class="email-form">
+          <div class="label-container">
+            <label for="email">Email address</label>
+            <label class="error-msg">Valid email required</label>
+          </div>          
+          <input id="e-mail" type="email" name="email" placeholder="email@company.com">
+          <input id="subscribe" class="btn" value="Subscribe to monthly newsletter" type="submit">
+        </div>
+      </div>
+      <div class="hero-img"></div>
+    </div>
+    <!-- Sign-up form end -->
+    
+    <div class="successForm">
+      <!-- Success message start -->
+      <div class="form-container">
+        <img src="assets/images/icon-success.svg">
+        <h2>Thanks for subscribing!</h2>
+        <p>A confirmation email has been sent to ash@loremcompany.com. 
+          Please open it and click the button inside to confirm your subscription.</p>
+          <input id="dismiss" class="btn" value="Dismiss message" type="submit">
+      </div>      
+        <!-- Success message end -->
+    </div>
+  </div>
+</body>
+</html>

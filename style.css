@@ -1,0 +1,159 @@
+:root {
+    /* Colors */
+    --primary: hsl(4, 100%, 67%);
+    --darkGrey: hsl(234, 29%, 20%);
+    --grey: hsl(235, 18%, 26%);
+    --lightGrey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Tipography */
+
+    --roboto: 'Roboto', sans-serif;
+
+    --fontReg: 400;
+    --fontBold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--roboto);
+}
+
+.container {
+    background-color: var(--darkGrey);
+    width: 100%;
+    height: 100vh;
+}
+
+.signupForm, .successForm {
+    background: var(--white);
+    color: var(--darkGrey);
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.signupFormDescription {
+    height: 65%;
+    padding: 3rem 1.5rem;
+}
+
+.hero-img {
+    height: 35%;
+    width: 100%;
+    background-image: url(assets/images/illustration-sign-up-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 10% 10%;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    padding: 0 1.5rem;
+    margin: 0 auto 2rem;
+    list-style: url(assets/images/icon-list.svg)
+}
+
+li {
+    margin-bottom: 1rem;
+    padding-left: 10px;
+}
+
+label {
+    margin-bottom: 0.8rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: var(--fontBold);
+}
+input {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: solid 1px var(--lightGrey);
+}
+.error-field {
+    border: var(--primary) solid 1px;
+    color: var(--primary);
+    background-color: rgba(255, 98, 87, 0.1);
+}
+
+.btn {
+    background-color: var(--darkGrey);
+    border: none;
+    color: var(--white);
+    font-weight: var(--fontBold);
+}
+
+.successForm {
+    height: 100vh;
+    padding: 2rem;
+    display: none;
+}
+
+.form-container {
+    margin-top: 25%;
+}
+
+.form-container img {
+    margin-bottom: 1.5rem;
+}
+
+.form-container p {
+    line-height: 1.5rem;
+}
+
+.form-container .btn {
+    margin-top: 90%;
+}
+
+.label-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-msg {
+    color: var(--primary);
+    display: none;
+}
+
+@media (min-width: 400px) {
+    .signupForm, .successForm {
+        width: 60%;
+        height: 60%;
+        margin: auto;
+        padding: auto;
+    }
+
+    .signupForm {
+        display: flex;
+    }
+
+    .hero-img {
+        float: right;
+    }
+
+    .signupFormDescription {
+        float: left;
+    }
+
+}
+
+
+
+/* .successForm {
+    opacity: 0;
+} */
