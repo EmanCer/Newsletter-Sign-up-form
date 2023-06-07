@@ -2,9 +2,10 @@ const input = document.getElementById("e-mail");
 const msg = document.querySelector(".error-msg");
 const subscribe = document.getElementById("subscribe");
 const dismiss = document.getElementById("dismiss");
+const container = document.querySelector(".container");
 
-const singUpForm = document.querySelector(".signupForm");
-const successForm = document.querySelector(".successForm");
+const singUpForm = document.querySelector(".form-grid");
+const successForm = document.querySelector(".success");
 
 const cleanMsg = function () {
 	input.classList.remove("error-field");
@@ -19,6 +20,7 @@ const restoreForm = function () {
 	singUpForm.classList.remove("hide");
 	successForm.style.display = "none";
 	input.value = "";
+	container.style.width = "50%";
 };
 
 const checkEmail = function () {
@@ -29,6 +31,7 @@ const checkEmail = function () {
 	if (input.value.match(validRegex)) {
 		singUpForm.classList.add("hide");
 		successForm.style.display = "block";
+		container.style.width = "20%";
 	} else errorMsg();
 };
 

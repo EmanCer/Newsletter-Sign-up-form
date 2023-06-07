@@ -11,42 +11,38 @@
   <script defer src="app.js"></script>
 </head>
 <body>
+
   <div class="container">
-    <div class="signupForm">
-      
-      <!-- Sign-up form start -->     
-        <div class="signupFormDescription">
-          <h2>Stay updated!</h1>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p> 
-          <ul>
-            <li>Product discovery and building what matters</li>
-            <li>Measuring to ensure updates are a success</li>
-            <li>And much more!</li>
-          </ul>
-        <div class="email-form">
-          <div class="label-container">
-            <label for="email">Email address</label>
-            <label class="error-msg">Valid email required</label>
-          </div>          
-          <input id="e-mail" type="email" name="email" placeholder="email@company.com">
-          <input id="subscribe" class="btn" value="Subscribe to monthly newsletter" type="submit">
+    <div class="form-grid">
+      <div class="col-1">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt=""></div>
+
+      <div class="col-2">
+        <h1 class="title">Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p> 
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <div class="label-container">
+          <label for="email">Email address</label>
+          <label class="error-msg">Valid email required</label>
         </div>
+        
+        <input id="e-mail" type="email" name="email" placeholder="email@company.com">
+        <input id="subscribe" class="btn" value="Subscribe to monthly newsletter" type="submit">
       </div>
-      <div class="hero-img"></div>
     </div>
-    <!-- Sign-up form end -->
-    
-    <div class="successForm">
-      <!-- Success message start -->
-      <div class="form-container">
-        <img src="assets/images/icon-success.svg">
-        <h2>Thanks for subscribing!</h2>
-        <p>A confirmation email has been sent to ash@loremcompany.com. 
+
+    <div class="success">
+      <img src="assets/images/icon-success.svg">
+      <h2 class="title">Thanks for subscribing!</h2>
+      <p>A confirmation email has been sent to <span>ash@loremcompany.com.</span> 
           Please open it and click the button inside to confirm your subscription.</p>
-          <input id="dismiss" class="btn" value="Dismiss message" type="submit">
-      </div>      
-        <!-- Success message end -->
+      <input id="dismiss" class="btn" value="Dismiss message" type="submit">
     </div>
+          
   </div>
 </body>
 </html>
